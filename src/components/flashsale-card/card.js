@@ -7,6 +7,9 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { FaStar } from 'react-icons/fa';
 
 function FlashSales() {
+  const filtering = products.filter(product =>
+    ['flash', 'best-selling', 'explore'].includes(product.type)
+  );
   return (
     <div className="mt-10 relative">
       <p className="flex items-center text-red-600 font-bold">
@@ -45,7 +48,7 @@ function FlashSales() {
         </div>
       </div>
       <div className="flex overflow-x-auto no-scrollbar gap-6">
-        {products.map((product, index) => (
+        {filtering.map((product, index) => (
           <div
             key={index}
             className="flex-shrink-0 rounded flex flex-col overflow-hidden relative bg-white"
@@ -73,8 +76,8 @@ function FlashSales() {
               <h2 className="text-lg font-bold mb-2">{product.name}</h2>
               <p className="text-gray-600 text-sm">{product.description}</p>
               <div className="flex items-center space-x-2 mt-2">
-                <span className="text-red-500">{product.discounted}</span>
-                <span className="text-gray-400 line-through">{product.price}</span>
+                <span className="text-red-500">{product.price}</span>
+                {product.discounted ? <span className="text-gray-400 line-through">{product.discounted}</span> : null}
               </div>
               <div className="flex items-center space-x-1 mt-2">
                 {[...Array(5)].map((_, i) => (

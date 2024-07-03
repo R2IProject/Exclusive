@@ -7,6 +7,9 @@ import Category from './categories/categories'
 import BestProduct from './best-selling/product'
 import CategoryImage from './categories-image/index'
 import ExploreProduct from './explore-product/index'
+import FeaturedProduct from './featured-product/index'
+import Services from './common/service'
+import Footer from './footer/index'
 
 export {
     Crousel,
@@ -17,5 +20,8 @@ export {
     Category,
     BestProduct,
     CategoryImage,
-    ExploreProduct
+    ExploreProduct,
+    FeaturedProduct,
+    Services,
+    Footer
 }
