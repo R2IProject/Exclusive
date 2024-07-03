@@ -76,4 +76,4 @@ export default function Product({ type }) {
     )
 }
 
-//check
+//check.......
