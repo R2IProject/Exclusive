@@ -4,7 +4,7 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { FaStar } from 'react-icons/fa';
 import products from '../../../data/product';
 
-export default function Product({ type }) {
+export default function Product() {
     function FilterArray(obj) {
         if (obj.type === 'best-selling') {
             return obj;
