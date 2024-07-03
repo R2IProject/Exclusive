@@ -72,7 +72,7 @@ const products = [
     description: 'Small BookSelf',
   },
 
-  // Add more products here
+  // Add more products here.
 ];
 
 export default products;
