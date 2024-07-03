@@ -49,7 +49,7 @@ function FlashSales() {
           <div
             key={index}
             className="flex-shrink-0 rounded flex flex-col overflow-hidden relative bg-white"
-            style={{ width: '272px', height: '400px' }}
+            style={{ width: '397px', height: '397px' }}
           >
             <div className="bg-[#F5F5F5] relative w-full h-[250px] flex items-center justify-center">
               {product.discount ?
