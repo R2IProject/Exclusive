@@ -5,6 +5,17 @@ import AllButton from './common/product-button'
 import Line from './common/line'
 import Category from './categories/categories'
 import BestProduct from './best-selling/product'
-import CateIma from './categories-image/index'
+import CategoryImage from './categories-image/index'
+import ExploreProduct from './explore-product/index'
 
-export { Crousel, Navbar, FlashSales, AllButton, Line, Category, BestProduct, CateIma }
+export {
+    Crousel,
+    Navbar,
+    FlashSales,
+    AllButton,
+    Line,
+    Category,
+    BestProduct,
+    CategoryImage,
+    ExploreProduct
+}

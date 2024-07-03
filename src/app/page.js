@@ -1,4 +1,4 @@
-import { AllButton, BestProduct, CateIma, Category, Crousel, FlashSales, Line } from "@/components/Item";
+import { AllButton, BestProduct, CategoryImage, Category, Crousel, FlashSales, Line, ExploreProduct } from "@/components/Item";
 
 export default function Home() {
   return (
@@ -10,7 +10,8 @@ export default function Home() {
       <Category />
       <Line />
       <BestProduct />
-      <CateIma />
+      <CategoryImage />
+      <ExploreProduct />
     </main>
   );
 }
