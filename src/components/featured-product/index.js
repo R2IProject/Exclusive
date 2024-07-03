@@ -1,4 +1,3 @@
-// /components/FeaturedSection.js
 'use client'
 import Image from 'next/image';
 import products from '../../../data/product';
@@ -30,8 +29,8 @@ function FeaturedSection() {
                             src={product.src}
                             alt={product.alt}
                             layout="responsive"
-                            width={500} // Adjust width as needed
-                            height={0} // Adjust height as needed
+                            width={500}
+                            height={0} 
                             objectFit="cover"
                             className="absolute inset-0 w-full h-full object-cover"
                         />

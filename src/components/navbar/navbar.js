@@ -1,4 +1,3 @@
-// components/Navbar.js
 import React from 'react';
 import Link from 'next/link';
 import { IoCartOutline } from "react-icons/io5";

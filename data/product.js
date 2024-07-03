@@ -1,4 +1,3 @@
-// /data/products.js
 const products = [
   {
     type: 'flash',

@@ -1,4 +1,3 @@
-// /components/FlashSales.js
 'use client'
 import Image from 'next/image';
 import products from '../../../data/product';
