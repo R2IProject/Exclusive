@@ -75,3 +75,5 @@ export default function Product({ type }) {
         </div>
     )
 }
+
+//check
