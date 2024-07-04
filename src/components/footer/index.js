@@ -1,5 +1,7 @@
 import { VscSend } from "react-icons/vsc";
-import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
+import { BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
+import { RiLinkedinLine } from "react-icons/ri";
+import { FiTwitter } from "react-icons/fi";
 export default function Footer() {
     return (
         <footer className="bg-black text-white py-10 mt-44">
@@ -103,13 +105,13 @@ export default function Footer() {
                             <BiLogoFacebook className="text-2xl" />
                         </a>
                         <a href="#" className="text-white">
-                            <BiLogoTwitter className="text-2xl" />
+                            <FiTwitter className="text-2xl" />
                         </a>
                         <a href="#" className="text-white">
                             <BiLogoInstagram className="text-2xl" />
                         </a>
                         <a href="#" className="text-white">
-                            <BiLogoLinkedin className="text-2xl" />
+                            <RiLinkedinLine className="text-2xl" />
                         </a>
                     </div>
                 </div>

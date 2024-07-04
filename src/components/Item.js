@@ -10,6 +10,8 @@ import ExploreProduct from './explore-product/index'
 import FeaturedProduct from './featured-product/index'
 import Services from './common/service'
 import Footer from './footer/index'
+import AboutCarousel from './crousel/about-carousel'
+import ContactForm from './contactform/contactform'
 
 export {
     Crousel,
@@ -23,5 +25,7 @@ export {
     ExploreProduct,
     FeaturedProduct,
     Services,
-    Footer
+    Footer,
+    AboutCarousel,
+    ContactForm
 }

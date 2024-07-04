@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255; /* Set background start to white */
@@ -24,8 +27,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* styles/globals.css */
+
 .no-scrollbar::-webkit-scrollbar{
   display: none;
+}
+
+.w-100 {
+  width: 403px ;
+}
+
+.bg-gray-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 245, 245, 1);
 }
 /* This style targets SVG elements within the Bootstrap icons */
 .icon-thick i {
