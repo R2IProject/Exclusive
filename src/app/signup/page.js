@@ -1,97 +1,53 @@
-'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 export default function RegisterPage() {
-  const router = useRouter();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    password: ""
-  });
-  const [error, setError] = useState(null);
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await fetch('/api/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form),
-      });
-
-      const data = await res.json();
-      if (res.status === 201) {
-        router.push('/login');
-      } else {
-        setError(data.message);
-      }
-    } catch (error) {
-      setError('An unexpected error occurred. Please try again.');
-    }
-  };
-
   return (
-    <div className="min-h-screen flex">
-      <div className="w-1/2 flex items-center justify-center bg-gray-100">
-        <Image src="/images/signin.png" width={500} height={500} alt="Shopping" />
+    <div className="flex min-h-screen">
+      <div className="flex items-center justify-center">
+        <Image src="/images/signin.png" width={900} height={500} alt="Shopping" />
       </div>
-      <div className="w-1/2 flex flex-col justify-center p-8">
-        <h2 className="text-3xl font-semibold mb-6">Create an account</h2>
-        <p className="mb-4 text-gray-600">Enter your details below</p>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={form.name}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email or Phone Number"
-            value={form.email}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={form.password}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded"
-          />
-          {error && <p className="text-red-500">{error}</p>}
-          <button type="submit" className="w-full bg-red-500 text-white p-2 rounded">
-            Create Account
-          </button>
-        </form>
-        <div className="mt-4">
-          <button className="w-full bg-white border border-gray-300 p-2 rounded flex items-center justify-center">
-            <img src="/google-icon.png" alt="Google Icon" className="w-5 h-5 mr-2" />
-            Sign up with Google
-          </button>
+      <div className="flex flex-col justify-center items-center w-1/2 p-8">
+        <div className="max-w-md w-full">
+          <h2 className="text-3xl font-semibold mb-6 text-black">Create an account</h2>
+          <p className="mb-4 text-gray-600">Enter your details below</p>
+          <form className="space-y-4 flex flex-col">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              className="p-2 border border-gray-300 rounded text-black"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email or Phone Number"
+              className="p-2 border border-gray-300 rounded text-black"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              className="p-2 border border-gray-300 rounded text-black"
+            />
+            <button type="submit" className="bg-red-500 text-white p-2 rounded">
+              Create Account
+            </button>
+          </form>
+          <div className="mt-4">
+            <button className="bg-white border border-gray-300 p-2 rounded flex items-center justify-center w-full text-black">
+              <FcGoogle className="w-5 h-5 mr-2 " />
+              Sign up with Google
+            </button>
+          </div>
+          <p className="mt-4 text-center text-gray-500">
+            Already have an account?{" "}
+            <Link href="/login">
+              <span className="text-gray-700 underline">Log in</span>
+            </Link>
+          </p>
         </div>
-        <p className="mt-4 text-center">
-          Already have an account?{" "}
-          <Link href="/login">
-            <a className="text-blue-600">Log in</a>
-          </Link>
-        </p>
       </div>
     </div>
   );
