@@ -27,5 +27,5 @@ export {
     Services,
     Footer,
     AboutCarousel,
-    ContactForm
+    ContactForm,
 }

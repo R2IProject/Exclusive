@@ -7,7 +7,7 @@ import { PiHouseLight } from "react-icons/pi";
 
 export default function AboutPage() {
     return (
-        <main className='pl-24'>
+        <main className='pl-24 mb-44'>
             <h2 className="text-gray-400 mt-16">Home / <span className="text-black">About</span></h2>
             <div className="flex mt-44">
                 <div className="flex-1">

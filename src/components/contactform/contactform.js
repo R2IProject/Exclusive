@@ -5,7 +5,7 @@ const ContactForm = () => {
     return (
         <main className='px-24 py-10 ml-28'>
             <h2 className="text-gray-400 mt-16 mb-32">Home / <span className="text-black">Contact</span></h2>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mb-44">
                 <div className="flex space-x-8 w-full">
                     <div className="p-6 bg-white rounded-lg shadow-lg">
                         <div className="mb-8">

@@ -4,7 +4,7 @@ import { RiLinkedinLine } from "react-icons/ri";
 import { FiTwitter } from "react-icons/fi";
 export default function Footer() {
     return (
-        <footer className="bg-black text-white py-10 mt-44">
+        <footer className="bg-black text-white py-10">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
                 <div className="flex flex-col space-y-4 md:space-y-6">
                     <div className="text-gray-400 font-bold text-lg">Exclusive</div>

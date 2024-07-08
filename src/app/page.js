@@ -8,7 +8,6 @@ import {
   Line,
   ExploreProduct,
   FeaturedProduct,
-  Footer
 } from "@/components/Item";
 
 export default function Home() {
@@ -25,9 +24,11 @@ export default function Home() {
         <CategoryImage />
         <ExploreProduct />
         <AllButton />
+        <div className="mb-44">
         <FeaturedProduct />
+        </div>
       </main>
-      
+
     </>
   );
 }

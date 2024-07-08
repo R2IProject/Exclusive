@@ -11,25 +11,25 @@ export default function RegisterPage() {
       <div className="flex flex-col justify-center items-center w-1/2 p-8">
         <div className="max-w-md w-full">
           <h2 className="text-3xl font-semibold mb-6 text-black">Create an account</h2>
-          <p className="mb-4 text-gray-600">Enter your details below</p>
+          <p className="mb-12 text-gray-600">Enter your details below</p>
           <form className="space-y-4 flex flex-col">
             <input
               type="text"
               name="name"
               placeholder="Name"
-              className="p-2 border border-gray-300 rounded text-black"
+              className="p-2 border-b-2 border-gray-300 text-black"
             />
             <input
               type="email"
               name="email"
               placeholder="Email or Phone Number"
-              className="p-2 border border-gray-300 rounded text-black"
+              className="p-2 border-b-2 border-gray-300 text-black"
             />
             <input
               type="password"
               name="password"
               placeholder="Password"
-              className="p-2 border border-gray-300 rounded text-black"
+              className="p-2 border-b-2 border-gray-300 text-black"
             />
             <button type="submit" className="bg-red-500 text-white p-2 rounded">
               Create Account
@@ -43,8 +43,8 @@ export default function RegisterPage() {
           </div>
           <p className="mt-4 text-center text-gray-500">
             Already have an account?{" "}
-            <Link href="/login">
-              <span className="text-gray-700 underline">Log in</span>
+            <Link href="/signin">
+              <span className="text-gray-700 underline ml-5">Log in</span>
             </Link>
           </p>
         </div>
