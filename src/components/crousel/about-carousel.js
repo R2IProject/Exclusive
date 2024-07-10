@@ -46,7 +46,7 @@ const AboutGrid = () => {
                     {teamMembers.slice(0, 3).map((member, index) => (
                         <div key={index} className="rounded flex flex-col overflow-hidden bg-gray-1 pt-10">
                             <div className="mx-auto relative w-[300px] h-[363px]">
-                                <Image src={member.image} alt={member.name} layout='fill' objectFit="contain" />
+                                <Image src={member.image} alt={member.name} fill objectFit="contain" />
                             </div>
                             <div className='bg-white'>
                                 <h3 className="text-4xl mt-4 mb-2 text-black font-medium">{member.name}</h3>

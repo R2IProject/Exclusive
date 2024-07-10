@@ -1,5 +1,5 @@
 import Image from "next/image";
-import products from "../../../data/product";
+import products from "../../../../data/product";
 import { IoTrashOutline } from "react-icons/io5";
 import { AiOutlineEye } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
@@ -41,7 +41,7 @@ export default function WishList() {
                                 <Image
                                     src={product.src}
                                     alt={product.alt}
-                                    layout="fill"
+                                    fill
                                     objectFit="contain"
                                 />
                             </div>
@@ -92,7 +92,7 @@ export default function WishList() {
                                 <Image
                                     src={product.src}
                                     alt={product.alt}
-                                    layout="fill"
+                                    fill
                                     objectFit="contain"
                                 />
                             </div>

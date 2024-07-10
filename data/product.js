@@ -1,3 +1,9 @@
+import { RiComputerLine } from "react-icons/ri";
+import { CiCamera } from "react-icons/ci";
+import { IoWatchOutline } from "react-icons/io5";
+import { LuGamepad } from "react-icons/lu";
+import { FiHeadphones, FiSmartphone } from "react-icons/fi";
+
 const products = [
   {
     type: 'flash',
@@ -172,7 +178,7 @@ const products = [
   },
   {
     type: 'featured',
-    src: '/images/PlayStation 5.png',
+    src: '/images/(dashboard)/featured-product/PlayStation5.png',
     name: 'PlayStation 5',
     alt: 'PlayStation 5',
     description: 'Black and White version of the PS5',
@@ -186,7 +192,7 @@ const products = [
     name: 'Womens Collections',
     description: 'Featured women collections',
     description1: ' that give you another vibe.',
-    src: '/images/Womens Collections.png',
+    src: '/images/(dashboard)/featured-product/Womens Collections.png',
     alt: 'Womens Collections',
     link: '#'
   },
@@ -194,7 +200,7 @@ const products = [
     type: 'featured',
     name: 'Perfume',
     description: 'GUCCI INTENSE OUD EDP',
-    src: '/images/Perfume.png',
+    src: '/images/(dashboard)/featured-product/Perfume.png',
     alt: 'Perfume',
     link: '#'
   },
@@ -202,7 +208,7 @@ const products = [
     type: 'featured',
     name: 'Speakers',
     description: 'Amazon wireless speakers.',
-    src: '/images/Speakers.png',
+    src: '/images/(dashboard)/featured-product/Speakers.png',
     alt: 'Speakers',
     link: '#'
   },
@@ -276,4 +282,14 @@ const products = [
   // Add more products here.
 ];
 
-export default products;
+const categories = [
+  { icon: <FiSmartphone className="text-4xl text-black" />, name: 'Phones' },
+  { icon: <RiComputerLine className="text-4xl text-black" />, name: 'Computers' },
+  { icon: <IoWatchOutline className="text-4xl text-black" />, name: 'Smart Watch' },
+  { icon: <CiCamera className="text-4xl text-white" />, name: 'Camera', bgClass: 'bg-red-500', textClass: 'text-white' },
+  { icon: <FiHeadphones className="text-4xl text-black" />, name: 'Headphones' },
+  { icon: <LuGamepad className="text-4xl text-black" />, name: 'Gaming' },
+];
+
+export {categories};
+export default products

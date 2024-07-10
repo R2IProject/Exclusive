@@ -6,7 +6,7 @@ export default function Line() {
         src='/images/Line 5.png'
         width={1660}
         height={20}
-        className="mt-20 mb-10"
+        className="hidden md:mt-20 mb-10"
         />
     )
 }

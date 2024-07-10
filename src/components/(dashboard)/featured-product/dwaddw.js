@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image';
-import products from '../../../data/product';
-import { Services } from '../Item';
+import products from '../../../../data/product';
+import Services from '../../common/service';
 
 function FeaturedSection() {
     const featuredProducts = products.filter(product => product.type === 'featured');
@@ -30,7 +30,7 @@ function FeaturedSection() {
                             alt={product.alt}
                             layout="responsive"
                             width={500}
-                            height={0} 
+                            height={0}
                             objectFit="cover"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
@@ -44,7 +44,7 @@ function FeaturedSection() {
                     </div>
                 ))}
             </div>
-            <Services/>
+            <Services />
         </div>
     );
 }

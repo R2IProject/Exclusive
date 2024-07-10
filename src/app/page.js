@@ -13,7 +13,7 @@ import {
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen flex-col justify-between px-24 py-8">
+      <main className="min-h-screen flex-col justify-between md:px-24 py-0 md:py-8">
         <Crousel />
         <FlashSales />
         <AllButton />

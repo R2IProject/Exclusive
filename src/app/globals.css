@@ -7,8 +7,10 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255; /* Set background start to white */
-  --background-end-rgb: 255, 255, 255; /* Set background end to white */
+  --background-start-rgb: 255, 255, 255;
+  /* Set background start to white */
+  --background-end-rgb: 255, 255, 255;
+  /* Set background end to white */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,28 +21,46 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 /* styles/globals.css */
 
-.no-scrollbar::-webkit-scrollbar{
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .w-100 {
-  width: 403px ;
+  width: 403px;
+}
+@media (min-width: 1280px) {
+  .lg\:flex-row {
+      flex-direction: row;
+  }
+}
+@media (min-width: 300px) {
+  .sp\:flex-col {
+    flex-direction: column;
+  }
+
+  .sp\:space-x-2> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem
+        /* 8px */
+        * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem
+        /* 8px */
+        * calc(1 - var(--tw-space-x-reverse)));
+  }
 }
 
 .bg-gray-1 {
   --tw-bg-opacity: 1;
   background-color: rgba(245, 245, 245, 1);
 }
+
 /* This style targets SVG elements within the Bootstrap icons */
 .icon-thick i {
   -webkit-text-stroke-width: 2px;
